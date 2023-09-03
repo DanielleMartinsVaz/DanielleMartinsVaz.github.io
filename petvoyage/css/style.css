@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    background-color: #f1f6fc31;
+}
+
+section,
+footer {
+    padding: 54px 0;
+
+}
+
+h3 {
+    font-size: 50px;
+}
+
+p {
+    color: #0000009c;
+}
+
+.container {
+    max-width: 1400px;
+    /*largura máxima*/
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.btn {
+    background-color: #17803a;
+    color: aliceblue;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+
+}
+
+.btn:hover {
+    background-color: #37bb63;
+}
+
+header {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.container__titulo {
+    font-size: 12px;
+    color: aliceblue;
+
+}
+
+nav ul a {
+    color: aliceblue;
+    margin: 0 25px;
+    text-transform: uppercase;
+    /*para texto ficar maiúsculo*/
+    font-size: 14px;
+    display: block;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+nav ul a::after {
+    content: "";
+    background-color: #0b4d21;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+
+/*Menu Mobile*/
+nav .menu__dois {
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    display: none;
+}
+
+nav .icone_fechar {
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+.banner .banner__texto {
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+
+.banner .banner__texto h1 {
+    font-size: 90px;
+    color: #278d49;
+
+}
+
+.banner .banner__texto h2 {
+    font-size: 50px;
+    color: #278d49;
+
+}
+
+.banner .banner__texto h3 {
+    font-size: 50px;
+    color: aliceblue;
+
+}
+
+.banner .banner__texto p {
+    font-size: 30px;
+    color: #26b656;
+    font-weight: lighter;
+    text-align: center;
+    margin: 18px 0;
+}
+
+/*Cadastros e Acesso*/
+
+.cadastro .cadastro__container {
+    display: flex;
+    align-items: center;
+}
+
+.cadastro .cadastro_container_texto {
+    width: 50%;
+    padding: 0 40px;
+    margin-left: 25px;
+    text-align: center;
+}
+
+.cadastro .cadastro_container_texto h3 {
+    font-size: 35px;
+    text-align: center;
+    
+}
+
+.cadastro .cadastro_container_texto p {
+    margin: 5px 0 10px 0;
+    text-align: justify;
+}
+
+.cadastro .cadastro__container__imagem {
+    width: 50%;
+    margin-right: 25px;
+}
+
+.cadastro .cadastro__container__imagem img {
+    width: 90%;
+    box-shadow: 20px 20px 10px #B4D8C0;
+    margin: 25px;
+}
+
+/*Footer*/
+
+.footer {
+    background-color: #278d49;
+    text-align: center;
+}
+
+.footer a {
+    color: #12682e;
+    font-size: 15px;
+    background-color: white;
+    padding: 7px;
+    margin: 7px;
+    border-radius: 10px;
+    box-shadow: 5px 3px #96ebb2;
+}
+
+.footer p {
+    margin-top: 20px;
+    color: white;
+}
+
+/*Menu Mobile quando for 830px*/
+@media(max-width : 830px) {
+    .ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #96ebb2;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        clip-path: circle(0% at 100% 0);
+        transition: 0.7s;
+    }
+
+    /*Menu de Transição*/
+    .ul.open {
+        clip-path: circle(141.4% at 100% 0);
+
+    }
+
+    .ul a {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    nav .menu__dois {
+        display: block;
+    }
+
+    nav .icone_fechar {
+        display: block;
+        position: absolute;
+        top: 46px;
+        right: 65px;
+    }
+}
+
+/*Itens da Página Sobre*/
+.strong {
+    font-size: 24px;
+}
+
+.sobre .sobre__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sobre .sobre__container__texto {
+    width: 50%;
+    padding-right: 40px;
+    margin-left: 25px;
+    text-align: center;
+    /*centralizar o botão*/
+}
+
+.sobre .sobre__container__texto p {
+    margin: 18px 0;
+    color: #000000a6;
+    text-align: justify;
+}
+
+.sobre .sobre__imagem {
+    width: 50%;
+    margin-right: 25px;
+}
+
+.sobre .sobre__imagem img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 12px 12px #87b7f17a;
+}
+
+/*Itens da Página Contato*/
+
+.contato__container__texto {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contato__container__texto .texto__esquerdo {
+    width: 25%;
+    padding: 30px;
+    background-color: #96ebb2;
+    border-radius: 14px;
+    margin-right: 10px;
+    margin-left: 60px;
+    height: min-content;
+}
+
+.contato__container__texto .texto__esquerdo div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.contato__container__texto .texto__direito button {
+    font-size: 18px;
+}
+
+
+.contato__container__texto .texto__esquerdo div i {
+    font-size: 34px;
+    margin-right: 20px;
+    color: aliceblue;
+}
+
+.contato__container__texto .texto__esquerdo p {
+    font-size: 18px;
+    color: aliceblue;
+}
+
+.contato__container__texto .texto__direito {
+    width: 50%;
+    margin-right: 60px;
+}
+
+.contato__container__texto .texto__direito input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 47px;
+    padding: 15px;
+    border-radius: 9px;
+    transition: 0.3s;
+    background-color: #7ba6da54;
+    border: 1px solid #f1f1f1;
+    color: #212121;
+    font-weight: lighter;
+}
+
+.contato__container__texto .texto__direito input:focus,
+.contato__container__texto .texto__direito textarea:focus {
+    border-color: #96ebb2;
+    transition: 0.3s;
+}
+
+.contato__container__texto .texto__direito textarea {
+    border: 1px solid #f1f1f1;
+    background-color: #7ba6da54;
+    color: #212121;
+    border-radius: 9px;
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 100%;
+    transition: 0.3s;
+    resize: none;
+}
+
+.contato__container__texto .texto__direito button {
+    border: none;
+    /*sem borda*/
+}
+
+/*Itens da Página de Login*/
+
+.login__container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.login__container__imagem {
+    width: 50%;
+    height: 100%;
+}
+
+.login__container__imagem img {
+    width: 100%;
+    height: 100%;
+}
+
+.box__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.box__container .box__container__texto {
+    width: 50%;
+}
+
+.box__container .box__container__texto h3 {
+    color: #212121;
+    font-weight: 500px;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.box__container .box__container__texto {
+    margin-bottom: 20px;
+}
+
+.box__container .box__container__texto .input__box__texto input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-weight: 400;
+    border: none;
+    font-size: 15px;
+    color: #554e55;
+    background: #96ebb2;
+    border-radius: 5px;
+}
+
+.box__container .box__container__texto .input__box__texto select {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-weight: 400;
+    border: none;
+    font-size: 15px;
+    color: #554e55;
+    background: #1ca84b;
+    border-radius: 5px;
+}
+
+.box__container .box__container__texto .input__box__tipo a {
+    width: 100%;
+    border: none;
+    box-shadow: 20px 20px 10px #c6ecf7;
+    margin: 12px 15px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+
+.box__container .box__container__texto .input__box__texto span {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #212121;
+    font-weight: 600;
+}
+
+.box__container .box__container__texto .input__box__tipo span {
+    font-size: 30px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #212121;
+    font-weight: 600;
+    text-align: center;
+}
+
+.box__container .box__container__texto .input__box__texto input::placeholder {
+    color: #554e55;
+}
+
+.box__container .box__container__texto .input__box__texto [type=submit] {
+    background: #33b85f;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.box__container .box__container__texto .input__box__texto [type=submit]:hover {
+    background: #96ebb2;
+}
+
+.box__container .box__container__texto .lembrar__senha {
+    margin-bottom: 20px;
+    color: #000000a6;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box__container .box__container__texto .lembrar__senha a {
+    text-decoration: none;
+    color: #4aa4ee;
+}
+
+.box__container .box__container__texto .lembrar__senha a:hover {
+    color: #2988d6;
+}
+
+.box__container .box__container__texto .input__box__texto p {
+    color: #000000a6;
+}
+
+.box__container .box__container__texto .input__box__texto p a {
+    color: #000000a6;
+}
+
+.box__container .box__container__texto .input__box__texto p a:hover {
+    color: #2988d6;
+}
+
+.box__container .box__container__texto h3 {
+    color: #607d8b;
+    text-decoration: none;
+    margin: 40px 0 15px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 22px;
+}
+
+@media(max-width : 830px) {
+    .login__container.login__container__imagem {
+        display: none;
+    }
+
+    .login__container.box__container {
+        width: 100%;
+    }
+
+    .login__container.box__container.box__container__texto {
+        width: 100%;
+        padding: 40px;
+        background: #1861bb;
+        margin: 50px;
+    }
+
+    .login__container.box__container.box__container__texto h3 {
+        margin: 30px 0 10px;
+    }
+}
+
+@media(max-width : 470px) {
+    .login__container.box__container.box__container__texto.lembrar__senha {
+        flex-wrap: wrap;
+    }
+
+    .login__container.box__container.box__container__texto.lembrar__senha a {
+        margin-top: 20px;
+    }
+}
+
+/*Itens da Página de Cadastro e da Página de Busca*/
+
+.cadastro__principal {
+    background-image: url(../imagem/backCadastro.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.W50 {
+    width: 50%;
+    float: left;
+    padding-right: 15px;
+}
+
+.cadastro__principal__container {
+    background-color: #70c5ec;
+    backdrop-filter: blur(40px);
+    padding: 30px 40px;
+    margin: 10px auto;
+    /*para bloco centralizado e estático - usar AUTO*/
+    width: 50%;
+    border-radius: 0 20px 20px 0;
+}
+
+.cadastro__principal__container h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #0f47af;
+    line-height: 2;
+}
+
+.cadastro__principal__container p {
+    font-weight: lighter;
+    line-height: 2;
+}
+
+.cadastro__principal__container p a {
+    color: #0f47af;
+    font-weight: bolder;
+}
+
+.cadastro__principal__container label {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 2;
+}
+
+form .input__cadastro input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-weight: 700px lighter;
+    border: none;
+    font-size: 15px;
+    color: #554e55;
+    background: #ace0f3;
+    border-radius: 5px;
+    line-height: 2;
+}
+
+.input__cadastro:hover input {
+    background: #73b7ee;
+    cursor: pointer;
+    
+}
+
+.input__cadastro:hover select {
+    background: #73b7ee;
+    cursor: pointer;
+}
+
+.input__cadastro input::placeholder {
+    color: #554e55;
+}
+
+.input__cadastro__info input {
+    outline: none;
+    border: none;
+    font-size: 15px;
+    color: #554e55;
+    background: #ace0f3;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 2;
+}
+
+.input__cadastro select {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-weight: 400;
+    border: none;
+    font-size: 15px;
+    color: #554e55;
+    background: #ace0f3;
+    border-radius: 5px;
+    line-height: 2;
+}
+
+.input__cadastro__info input::placeholder {
+    color: #554e55;
+}
+
+.input__cadastro__info label {
+    font-weight: lighter;
+}
+
+.cadastro__principal__container__texto a {
+    margin-top: 5%;
+    border: none;
+}
+
+/*Painel Cuidador de Idosos - Busca por Cuidadores*/
+
+.painel__container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin: 10px;
+}
+
+.painel__container__imagem {
+    width: 50%;
+    height: 100%;
+}
+
+.painel__container__imagem img {
+    width: 100%;
+    height: 100%;
+}
+
+.painel__box__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.painel__box__container .painel__box__container__texto {
+    width: 50%;
+}
+
+.painel__box__container .painel__box__container__texto h3 {
+    color: #608ad1;
+    font-weight: 500px;
+    font-size: 60px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+}
+
+.painel__box__container .painel__box__container__texto {
+    margin-bottom: 20px;
+}
+
+.painel__box__container .painel__box__container__texto a {
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    box-shadow: 10px 10px 10px #c6ecf7;
+    margin: 12px 15px;
+    font-weight: 600;
+    text-align: center;
+}

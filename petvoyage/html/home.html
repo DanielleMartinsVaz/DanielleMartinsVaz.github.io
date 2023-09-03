@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Início</title>
+</head>
+
+<body>
+    <!--início de header-->
+    <header style="background-image: url('../imagem/banner.png')"> <!--background individual de cada página-->
+        <!--início da div-->
+        <div class="container">
+            <nav>
+                <a class="container__titulo" href="../html/home.html">
+                    <img src="../imagem/logo.png" alt="#" width="50" height="50" >
+                </a>
+
+                <ul class="ul">
+                    <a href="../html/home.html">Início</a>
+                    <a href="../html/hospedagem.html">Hospedagem</a>
+                    <a href="../html/login.html">Login</a>
+                </ul>
+        </div>
+        </ul>
+
+        </nav>
+        <section class="banner">
+            <div class="banner__texto">
+                <h1>Pet Voyage</h1>
+                <br>
+                <br>
+                <p style="font-weight: bolder;">Viaje com tranquilidade usando o Pet Voyage,</p>
+                <p style="font-weight: bolder;">a solução de hospedagem.</p>
+            </div>
+        </section>
+        </div>
+        <!--fim da div-->
+    </header>
+    <!--fim de header-->
+
+    <!--Informações referente a página Inicial-->
+    <section>
+        <div class="login__container">
+            <div class="box__container">
+                <div class="box__container__texto">
+                    <h1 align="center">Formulário de Hospedagem</h1>
+
+                    <br>
+                    <form class="input__box__texto" method="post">
+                        <label for="bairro"><strong>Bairro para Hospedagem:</strong></label>
+                        <input type="text" id="bairro" name="bairro" required><br><br>
+
+                        <label for="data"><strong>Data de Agendamento:</strong></label>
+                        <input type="date" id="data" name="data" required><br><br>
+
+                        <label for="valorDiaria"><strong>Filtro de Valor de Diária:</strong></label>
+                        <select id="valorDiaria" name="valorDiaria">
+                            <option value="0-50">Até R$ 50,00</option>
+                            <option value="50-100">R$ 50,00 - R$ 100,00</option>
+                            <option value="100-200">R$ 100,00 - R$ 200,00</option>
+                            <option value="200+">Mais de R$ 200,00</option>
+                        </select><br><br>
+                        
+
+                        <label for="tiposAnimal"><strong>Tipos de Animal:</strong></label><br>
+                        <select id="animal" name="animal">
+                            <option  value="gato">Gato</option>
+                            <option value="cachorro">Cachorro</option>
+                            <option value="aves">Aves</option>
+                            <option value="répteis">Repteis</option>
+                            <option value="roedores">Roedores</option>
+                        </select><br><br>
+
+                        <div class="input__box__texto" style="text-align: center;">
+                            <a type="submit" href="#" class="btn" style="font-weight: bolder;">Enviar</a>
+                        </div>
+                        
+                </div>
+                </form>
+            </div>
+            <div class="login__container__imagem" >
+                <video autoplay loop muted style="width: 100%; height: 100%;">
+                    <source src="../video/PetVoyage.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+
+        </div>
+        </div>
+    </section>
+    <section class="cadastro">
+        <div class="cadastro__container">
+            <div class="cadastro__container__imagem"> <img src="../imagem/creche.jpg" alt="Cuidador de Idosos"
+                    width="200" height="300"></div>
+            <div class="cadastro_container_texto">
+                <h3>Hospedagem Pet Voyage.</h3>
+                <br>
+                <p> Descubra como o Pet Voyage pode atender às suas necessidades de hospedagem para pets de acordo com a sua preferência.</p>
+                <br>
+
+                <a style="font-weight: bolder;" href="../html/hospedagem.html" class="btn">Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="container">
+                <div class="links">
+                    <a class="fa fa-whatsapp"href="https://wa.me/554791751906" target="_blank"><strong> WhatsApp</strong></a>        
+                    <a class="fa fa-instagram" href="https://instagram.com/petvoyageoficial?igshid=MzRlODBiNWFlZA==" target="_blank"><strong> Instagram</strong></a>
+                </div>
+            <p>Desenvolvido por Equipe Pet Voyage.</p>
+        </div>
+    </footer>   
+</body>
+
+</html>

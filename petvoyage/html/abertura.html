@@ -1,0 +1,97 @@
+<<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/stylePadrao.css">
+    <link rel="stylesheet" href="../css/styleHome.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        header {
+            position: relative;
+            background: transparent;
+            z-index: 1;
+        }
+
+        .banner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .banner__texto {
+            text-align: center;
+            padding-top: 20%;
+        }
+
+        .btn {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    </style>
+    <title>Início</title>
+</head>
+
+<body>
+    <!--início de header-->
+    <header>
+        <!--background individual de cada página-->
+        <div class="container">
+            <nav>
+                <a class="container__titulo" href="../html/index.html">
+                    <!--FAZER A LOGO-->
+                    <h1>Pet Voyage</h1>
+                </a>
+
+                <ul class="ul">
+                    <a href="../html/home.html">Início</a>
+                    <a href="../html/sobre.html">Sobre</a>
+                    <a href="../html/login.html">Login</a>
+                    <a href="../html/contato.html">Contato</a>
+                    <div class="icone_fechar" onclick="closeMenu()">
+                    </div>
+                </ul>
+            </nav>
+            <section class="banner">
+                <div class="banner__texto">
+                    <video autoplay loop muted style="width: 100%; height: 100%;">
+                        <source src="../video/PetVoyage.mp4" type="video/mp4">
+                    </video>
+                    <a href="../html/sobre.html" class="btn">Saiba Mais</a>
+                </div>
+            </section>
+        </div>
+    </header>
+</body>
+
+</html>
